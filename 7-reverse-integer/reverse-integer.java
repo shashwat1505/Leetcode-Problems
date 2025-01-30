@@ -4,6 +4,7 @@ class Solution {
 
     while (x != 0) {
       ans = ans * 10 + x % 10;
+      System.out.print(ans+ "\n");
       x /= 10;
     }
 
