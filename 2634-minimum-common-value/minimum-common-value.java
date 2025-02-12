@@ -17,8 +17,6 @@ class Solution {
         // Initialize indices for iterating through the arrays
         int index1 = 0;
         int index2 = 0;
-
-        // Loop through both arrays until one array is fully traversed
         while (index1 < nums1Length && index2 < nums2Length) {
             if (nums1[index1] == nums2[index2]) {
                 return nums1[index1];
