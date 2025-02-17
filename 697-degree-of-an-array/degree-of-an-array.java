@@ -1,5 +1,4 @@
-
-    class Solution {
+class Solution {
   public int findShortestSubArray(int[] nums) {
     int ans = 0;
     int degree = 0;
