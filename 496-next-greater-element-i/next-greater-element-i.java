@@ -1,5 +1,6 @@
 class Solution {
-  public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+  public int[] nextGreaterElement(int[] nums1, int[] nums2) 
+  {
     List<Integer> ans = new ArrayList<>();
     Map<Integer, Integer> numToNextGreater = new HashMap<>();
     Deque<Integer> stack = new ArrayDeque<>(); // a decreasing stack
