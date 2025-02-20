@@ -3,9 +3,9 @@ class Solution {
   {
     List<Integer> ans = new ArrayList<>();
     Map<Integer, Integer> numToNextGreater = new HashMap<>();
-    Deque<Integer> stack = new ArrayDeque<>(); // a decreasing stack
-
-    for (final int num : nums2) {
+    Deque<Integer> stack = new ArrayDeque<>();
+for (final int num : nums2) 
+{
       while (!stack.isEmpty() && stack.peek() < num)
         numToNextGreater.put(stack.pop(), num);
       stack.push(num);
