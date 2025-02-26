@@ -4,8 +4,6 @@ class Solution {
         int minEndingHere = 0; // Represents the minimum subarray sum ending at the current position
         int maxAbsoluteSum = 0;
         for (int num : nums) {
-            // Calculate the maximum subarray sum ending here by taking the maximum of
-            // the current maximum subarray sum (extended by the current number) and 0
             maxEndingHere = Math.max(maxEndingHere + num, 0);
 
             // Calculate the minimum subarray sum ending here by taking the minimum of
