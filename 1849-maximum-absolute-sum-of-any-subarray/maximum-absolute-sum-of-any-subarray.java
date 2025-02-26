@@ -5,10 +5,6 @@ class Solution {
         int maxAbsoluteSum = 0;
         for (int num : nums) {
             maxEndingHere = Math.max(maxEndingHere + num, 0);minEndingHere = Math.min(minEndingHere + num, 0);
-
-            // Calculate the current maximum absolute subarray sum by taking the maximum of
-            // the current maximum absolute sum, the current maximum subarray sum ending here,
-            // and the absolute value of the current minimum subarray sum ending here
             maxAbsoluteSum = Math.max(maxAbsoluteSum, Math.max(maxEndingHere, Math.abs(minEndingHere)));
         }
 
