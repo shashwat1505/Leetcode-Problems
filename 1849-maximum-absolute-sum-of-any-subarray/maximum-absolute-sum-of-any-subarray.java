@@ -7,8 +7,6 @@ class Solution {
             maxEndingHere = Math.max(maxEndingHere + num, 0);minEndingHere = Math.min(minEndingHere + num, 0);
             maxAbsoluteSum = Math.max(maxAbsoluteSum, Math.max(maxEndingHere, Math.abs(minEndingHere)));
         }
-
-        // Return the overall maximum absolute subarray sum found
         return maxAbsoluteSum;
     }
 }
