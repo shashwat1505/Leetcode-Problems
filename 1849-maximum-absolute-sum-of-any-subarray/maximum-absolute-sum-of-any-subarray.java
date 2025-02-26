@@ -2,9 +2,7 @@ class Solution {
     public int maxAbsoluteSum(int[] nums) {
         int maxEndingHere = 0; // Represents the maximum subarray sum ending at the current position
         int minEndingHere = 0; // Represents the minimum subarray sum ending at the current position
-        int maxAbsoluteSum = 0; // Keeps track of the maximum absolute subarray sum
-
-        // Traverse the array
+        int maxAbsoluteSum = 0;
         for (int num : nums) {
             // Calculate the maximum subarray sum ending here by taking the maximum of
             // the current maximum subarray sum (extended by the current number) and 0
