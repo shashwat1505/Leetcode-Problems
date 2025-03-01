@@ -7,7 +7,7 @@ class Solution {
         nums[i+1] = 0;
       }
       int i = 0;
-    for (final int num : nums)
+    for ( int num : nums)
       if (num > 0)
         ans[i++] = num;
 
