@@ -11,7 +11,7 @@ class Solution {
             int k = n - 1;
             while (j < k) {
                 int sum = nums[i] + nums[j] + nums[k];
-                if (sum < 0) {
+            if (sum < 0) {
                     j++;
                 } else if (sum > 0) {
                     k--;
